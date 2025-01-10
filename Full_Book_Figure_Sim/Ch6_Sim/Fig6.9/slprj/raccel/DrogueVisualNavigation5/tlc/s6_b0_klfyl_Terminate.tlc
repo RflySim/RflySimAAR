@@ -1,0 +1,29 @@
+%implements s6_b0_klfyl_Terminate "C"
+
+%function Terminate(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcTerminateFcnOfS6B7 = OpaqueTLCBlockFcn("Terminate", 6, 7, 0, 40, 0)
+%assign tlcTerminateFcnOfS6B8 = OpaqueTLCBlockFcn("Terminate", 6, 8, 0, 40, 1)
+%assign tlcTerminateFcnOfS6B9 = OpaqueTLCBlockFcn("Terminate", 6, 9, 0, 40, 2)
+%assign tlcCleanupRuntimeResourcesFcnOfS6B7 = OpaqueTLCBlockFcn("CleanupRuntimeResources", 6, 7, 0, 40, 3)
+%assign tlcCleanupRuntimeResourcesFcnOfS6B8 = OpaqueTLCBlockFcn("CleanupRuntimeResources", 6, 8, 0, 40, 4)
+%assign tlcCleanupRuntimeResourcesFcnOfS6B9 = OpaqueTLCBlockFcn("CleanupRuntimeResources", 6, 9, 0, 40, 5)
+%<tlcTerminateFcnOfS6B7>\
+%<tlcTerminateFcnOfS6B8>\
+%<tlcTerminateFcnOfS6B9>\
+%<tlcCleanupRuntimeResourcesFcnOfS6B7>\
+%<tlcCleanupRuntimeResourcesFcnOfS6B8>\
+%<tlcCleanupRuntimeResourcesFcnOfS6B9>\
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function TerminateFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Terminate(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 40, fcnProtoType)>
+%endfunction

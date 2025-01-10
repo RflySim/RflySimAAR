@@ -1,0 +1,32 @@
+%implements s6_b0_klfyl_Start "C"
+
+%function Start(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcSetupRuntimeResourcesFcnOfS6B7 = OpaqueTLCBlockFcn("SetupRuntimeResources", 6, 7, 0, 34, 0)
+%assign tlcSetupRuntimeResourcesFcnOfS6B8 = OpaqueTLCBlockFcn("SetupRuntimeResources", 6, 8, 0, 34, 1)
+%assign tlcSetupRuntimeResourcesFcnOfS6B9 = OpaqueTLCBlockFcn("SetupRuntimeResources", 6, 9, 0, 34, 2)
+%assign tlcStartFcnOfS6B7 = OpaqueTLCBlockFcn("Start", 6, 7, 0, 34, 3)
+%assign tlcStartFcnOfS6B8 = OpaqueTLCBlockFcn("Start", 6, 8, 0, 34, 4)
+%assign tlcStartFcnOfS6B9 = OpaqueTLCBlockFcn("Start", 6, 9, 0, 34, 5)
+%<tlcSetupRuntimeResourcesFcnOfS6B7>\
+%<tlcSetupRuntimeResourcesFcnOfS6B8>\
+%<tlcSetupRuntimeResourcesFcnOfS6B9>\
+%<tlcStartFcnOfS6B7>\
+%<tlcStartFcnOfS6B8>\
+%<tlcStartFcnOfS6B9>\
+rtDW.lqqn2u4vda[0] = rtP.DataStoreMemory_InitialValue[0];
+rtDW.lqqn2u4vda[1] = rtP.DataStoreMemory_InitialValue[1];
+rtDW.lqqn2u4vda[2] = rtP.DataStoreMemory_InitialValue[2];
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function StartFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Start(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 34, fcnProtoType)>
+%endfunction

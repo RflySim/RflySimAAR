@@ -1,0 +1,35 @@
+%implements s6_b0_klfyl_PublicModuleTypes "C"
+
+%function PublicModuleTypes(block) Output
+
+#ifndef struct_emxArray_int32_T
+#define struct_emxArray_int32_T
+struct emxArray_int32_T
+{
+    int32_T *data;
+    int32_T *size;
+    int32_T allocatedSize;
+    int32_T numDimensions;
+    boolean_T canFreeData;
+};
+#endif /* struct_emxArray_int32_T */
+#ifndef typedef_gojf2fd54l
+#define typedef_gojf2fd54l
+typedef struct emxArray_int32_T gojf2fd54l;
+#endif /* typedef_gojf2fd54l */
+#ifndef struct_emxArray_real_T
+#define struct_emxArray_real_T
+struct emxArray_real_T
+{
+    real_T *data;
+    int32_T *size;
+    int32_T allocatedSize;
+    int32_T numDimensions;
+    boolean_T canFreeData;
+};
+#endif /* struct_emxArray_real_T */
+#ifndef typedef_jgwfi1xeax
+#define typedef_jgwfi1xeax
+typedef struct emxArray_real_T jgwfi1xeax;
+#endif /* typedef_jgwfi1xeax */
+%endfunction

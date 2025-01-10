@@ -1,0 +1,19 @@
+%implements s6_b0_klfyl_ForcingFunction "C"
+
+%function ForcingFunction(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcForcingFunctionFcnOfS6B7 = OpaqueTLCBlockFcn("ForcingFunction", 6, 7, 0, 39, 0)
+%<tlcForcingFunctionFcnOfS6B7>\
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function ForcingFunctionFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void ForcingFunction(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 39, fcnProtoType)>
+%endfunction
