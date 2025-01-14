@@ -1,0 +1,5 @@
+F16_Real5_init 在模型最外层被callback了，Initialization是海彪对其的注释版
+
+airspeed 是加油机的速度
+
+V1中的Guidance是根据华哥TILC+反馈的轨迹生成(AST论文中的Control Strategy 2)

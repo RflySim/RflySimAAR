@@ -1,0 +1,16 @@
+F16_init.m： 定义仿真环境参数
+ADC_Controller_Trajectory_Tracking.slx：加性分解仿真主程序
+Variable_Mass_Station_Keeping.slx： 变质量受油机加油过程位置保持仿真主程序 
+TankerVortexWindField.m：加油机尾涡诱导风场强度计算函数
+
+论文中的尾涡最终乘以了系数0.3
+
+
+尾部加COM是为了对比，和非ASD的情况对比。本来的对比结果不好，两者仿真基本相同，辅系统基本没有太大的作用，
+说明系统非线性比较小，所以想增大系统非线性，这里加了饱和。
+ADC_Controller_Trajectory_Tracking_Sat
+ADC_Controller_Trajectory_Tracking_Sat_COM
+
+
+直接运行相应的simulink文件即可运行仿真程序
+
